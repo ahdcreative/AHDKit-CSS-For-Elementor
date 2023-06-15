@@ -1,0 +1,49 @@
+{
+    "name": "ahdcrestive/ahdkit-css-for-elementor",
+    "description": "A lightweight plugin that open an option to add custom CSS code for each device (desktop, tablets, mobiles) by elementor widgets.",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "AHDCreative",
+            "email": "hello@ahd-creative.agency"
+        }
+    ],
+    "require": {
+        "wikimedia/at-ease": "^2.1",
+        "wikimedia/css-sanitizer": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wikimedia\\AtEase\\": "src/Wikimedia/AtEase/"
+        },
+        "files": [
+            "src/Wikimedia/Functions.php"
+        ]
+    },
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        }
+    ],
+    "require-dev": {
+        "mediawiki/mediawiki-codesniffer": "^41.0",
+        "mediawiki/minus-x": "^1.1",
+        "ockcyp/covers-validator": "^1.6",
+        "php-parallel-lint/php-console-highlighter": "^1.0",
+        "php-parallel-lint/php-parallel-lint": "^1.3",
+        "phpunit/phpunit": "^9.6",
+        "wpackagist-plugin/elementor": "^3.13"
+    },
+    "installation-source": "dist",
+    "notification-url": "https://packagist.org/downloads/",
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
